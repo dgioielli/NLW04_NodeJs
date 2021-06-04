@@ -5,7 +5,6 @@ API de treinamento da trilha Node Js do NLW04 Fev 2021.
 ## Configuração do ambiente de desenvolvimento
 
 1. Clonar o repositório
-
 1. Executar o comando `npm i` para instalar as dependências
 1. Fazer uma cópia do arquivo `.env.exemple` e chamar de `.env`
 1. Atualizar as variáveis de ambiente que estão no arquivo `.env`
@@ -33,6 +32,18 @@ A seguir temos uma lista dos modulos que foram instalados separados pelas aulas 
         - `typescript`
         - `ts-node-dev`
         - `@type/express`
+1. Aula 02 - Banco de Dados:
+    - Dependências:
+    - Dependências de desenvolcimento:
+1. Aula 03 - Testando a aplicação:
+    - Dependências:
+    - Dependências de desenvolcimento:
+1. Aula 04 - Envio de e-mail:
+    - Dependências:
+    - Dependências de desenvolcimento:
+1. Aula 05 - Finalizando com validações:
+    - Dependências:
+    - Dependências de desenvolcimento:
 
 ### Sequência de desenvolvimento:
 
@@ -41,4 +52,11 @@ A seguir temos uma lista dos modulos que foram instalados separados pelas aulas 
     - As dependências foram instaladas.
     - O arquivo `server.ts` foi criado para servir como sendo a base do servidor da aplicação.
         - No arquivo `server.ts` foi implementada a criação e inicialização do server **express**.
-    - 
+    - O arquivo `routes.ts` foi criado para servir como configurador das rotas do sistema.
+    - A pasta `controllers` foi criada para armazenar os controllers que serão desenvolvidos na aplicação.
+    - O arquivo `UserController.ts` foi criado para servir como o controller responsável pelas requisições de Usuários.
+        - A rota **POST** de `UserController` foi configurada no arquivo `router.ts`
+1. Aula 02 - Banco de Dados:
+1. Aula 03 - Testando a aplicação:
+1. Aula 04 - Envio de e-mail:
+1. Aula 05 - Finalizando com validações:
