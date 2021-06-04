@@ -12,14 +12,33 @@ API de treinamento da trilha Node Js do NLW04 Fev 2021.
 1. Executar o comando `npm start` para rodar o servidor
 
 ## Passos do processo de estudo:
-.
+Aqui eu vou tentar montar um resumo de tudo que foi utilizado e feito durante o processo de desenvolvimento da API.
 
 ### Testes para compreender as vantagens e o funcionamento do TypeScript
-.
+
 
 1. Usando o arquivo `Teste.ts` foram realizadas algumas demonstrações de como funciona utilizar `TypeScript` no lugar de `JaveScript`.
 
     1. Foi apresentada a diferença de indicação usando ou não a definição de tipos.
     1. Foi apresentada uma forma de fazer o desempacotamento de dados de uma estrutura.
 
- 
+### Modulos instalados
+
+A seguir temos uma lista dos modulos que foram instalados separados pelas aulas do desenvolvimento:
+
+1. Aula 01 - Introdução:
+    - Dependências:
+        - `express`
+    - Dependências de desenvolvimento:
+        - `typescript`
+        - `ts-node-dev`
+        - `@type/express`
+
+### Sequência de desenvolvimento:
+
+1. Aula 01 - Introdução:
+    - Dentro da pasta da `api` foi criado a aplicação com o comando **yarn init -y**.
+    - As dependências foram instaladas.
+    - O arquivo `server.ts` foi criado para servir como sendo a base do servidor da aplicação.
+        - No arquivo `server.ts` foi implementada a criação e inicialização do server **express**.
+    - 
