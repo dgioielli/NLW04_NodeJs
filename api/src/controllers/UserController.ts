@@ -8,7 +8,7 @@ class UserController {
         const { name, email } = request.body;
         // console.log(body);
         // console.log("1");
-        const usersRepository = getRepository(User);
+        //const usersRepository = getRepository(User);
 
         // console.log("1");
         // const user = usersRepository.create({ name, email });
