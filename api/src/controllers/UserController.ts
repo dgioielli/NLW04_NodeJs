@@ -7,18 +7,25 @@ class UserController {
     async create(request: Request, response: Response) {
         const { name, email } = request.body;
         // console.log(body);
-        // console.log("1");
-        //const usersRepository = getRepository(User);
+        const usersRepository = getRepository(User);
 
-        // console.log("1");
-        // const user = usersRepository.create({ name, email });
+        // Select * from users where email = "email"
+        const userAlreadyExists = await usersRepository.findOne({ where: { email: email } });
+        console.log(userAlreadyExists);
 
-        // console.log("1");
-        // await usersRepository.save(user);
+        if (userAlreadyExists) {
+            return response.status(400).json({
+                status: 400,
+                error: "User already exists!"
+            })
+        }
 
-        return response.json({ message: "Os dados forma salvos com sucesso!" });
-        // console.log("1");
-        // return response.json(user);
+        const user = usersRepository.create({ name, email });
+
+        await usersRepository.save(user);
+
+        // return response.json({ message: "Os dados forma salvos com sucesso!" });
+        return response.json(user);
     }
 }
 

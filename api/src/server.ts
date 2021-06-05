@@ -1,5 +1,8 @@
+import 'reflect-metadata';
 import express, { request, response } from 'express';
 import { router } from './routes';
+// Por padrão o arquivo "index" é o importado quando um arquivo não é especificado.
+import './database';
 
 const app = express();
 
@@ -29,7 +32,9 @@ const app = express();
 //     return response.json({ "message": "Salvos com sucesso" })
 // })
 
+// Configuração do server para a utilização do json
 app.use(express.json());
+// Configuração das rotas definidas no router.
 app.use(router);
 
 app.listen(3333, () => console.log("Server is running!"));
